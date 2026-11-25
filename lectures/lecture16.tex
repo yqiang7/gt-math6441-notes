@@ -115,11 +115,11 @@
   the $\phi_n, \psi_n$ are chain maps):
   \begin{center}
     \begin{tikzcd}
-      0 \ar[d] & 0 \ar[d] & 0 \ar[d] \\
-      A_n \ar[r, "\partial_A"] \ar[d, "\phi_n"] & A_{n - 1} \ar[r, "\partial_A"] \ar[d, "\phi_{n - 1}"] & A_{n - 2} \ar[d, "\phi_{n - 2}"] \\
-      B_n \ar[r, "\partial_B"] \ar[d, "\psi_n"] & B_{n - 1} \ar[r, "\partial_B"] \ar[d, "\psi_{n - 1}"] & B_{n - 2} \ar[d, "\psi_{n - 2}"] \\
-      C_n \ar[r, "\partial_C"] \ar[d] & C_{n - 1} \ar[r, "\partial_C"] \ar[d] & C_{n - 2} \ar[d] \\
-      0 & 0 & 0
+      & 0 \ar[d] & 0 \ar[d] & 0 \ar[d] \\
+      \cdots \ar[r] & A_n \ar[r, "\partial_A"] \ar[d, "\phi_n"] & A_{n - 1} \ar[r, "\partial_A"] \ar[d, "\phi_{n - 1}"] & A_{n - 2} \ar[d, "\phi_{n - 2}"] \ar[r] & \cdots \\
+      \cdots \ar[r] & B_n \ar[r, "\partial_B"] \ar[d, "\psi_n"] & B_{n - 1} \ar[r, "\partial_B"] \ar[d, "\psi_{n - 1}"] & B_{n - 2} \ar[d, "\psi_{n - 2}"] \ar[r] & \cdots \\
+      \cdots \ar[r] & C_n \ar[r, "\partial_C"] \ar[d] & C_{n - 1} \ar[r, "\partial_C"] \ar[d] & C_{n - 2} \ar[d] \ar[r] & \cdots \\
+      & 0 & 0 & 0
     \end{tikzcd}
   \end{center}
   Given $[c] \in H_n(C_n, \partial_C)$, we know that
